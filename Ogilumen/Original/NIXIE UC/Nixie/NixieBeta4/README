@@ -1,0 +1,40 @@
+Nixie Arduino Library
+---------------------
+
+Made by Lionel Haims. Released to the public domain.
+Drop me a line if you find it useful.
+
+This library is intended to be use with the Ogi Lumen Nixie Tube driver
+board.
+
+Installation:
+-------------
+See current library installation instructions on the arduino website.
+
+For example:
+For version 0011 of the Arduino IDE
+- unzip and copy the "Nixie" directory into:
+arduino-0011/hardware/libraries/
+
+
+Usage:
+------
+See the examples (in the IDE: open/Examples/Library-Nixie/) or 
+see the Nixie.h file for usage.
+
+
+
+
+
+History:
+--------
+Rev Beta4: Feb 26, 2010 (Marc Pelletreau)
+- Added writeLongNumZero() for long number support.
+
+Rev 3: March 1, 2009
+- Added include of WProgram.h to compile properly With Arduino 0012 and 0013.
+
+Rev 2: July 27, 2008
+- First public release. Works with Arduino 0011.
+
+

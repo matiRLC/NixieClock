@@ -1,0 +1,27 @@
+#######################################################
+#  keywords.txt - keywords file for the Nixie library
+#  Created by Lionel Haims, July 25, 2008.
+#  Released into the public domain.
+#######################################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Nixie	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+writeNumLeft		KEYWORD2
+writeNumZero		KEYWORD2
+writeLongNumZero	KEYWORD2
+writeNumTrim		KEYWORD2
+writeArray		KEYWORD2
+clear			KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
