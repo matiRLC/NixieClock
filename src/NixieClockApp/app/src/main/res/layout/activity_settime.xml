@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * FIRST CREATED ON : 2018-06-07
+ *               BY : Matias (matias.quintana.r@gmail.com)
+ * DESCRIPTION      : Layout file written in xml for SetTimeActivity.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.matias.nixieclockapp.SetTimeActivity">
+
+    <EditText
+        android:id="@+id/setHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:ems="5"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:text="Set Hour" />
+
+    <EditText
+        android:id="@+id/setMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/setHour"
+        android:layout_marginTop="90dp"
+        android:ems="5"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:text="Set Minutes" />
+
+    <Button
+        android:id="@+id/sendTimeButton"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:text="SEND TIME"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

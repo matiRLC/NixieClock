@@ -15,19 +15,23 @@
  *       funtionalities too (https://playground.arduino.cc/Main/DS1302RTC).
  *       Complete project can be found in https://github.com/matiRLC/NixieClock
  * 
- * @author Matias Quintana matiasquitana.com
+ * @author Matias (matiasquitana.com)
  * @version 2018 04 22
  */
 
 #include <DS1302RTC.h>
 #include <Time.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 // Debug mode for sending the current time via serial 
-#define DEBUG_ON true
-#define SET_TIME true
+#define DEBUG_ON false
+#define SET_TIME false
 
-/** Pin mapping for Arduino UNO, Atmega328P
+/** Pin mapping for Arduino UNO, AtSET_TIMEmega328P
  * ARDUINO UNO    Atmega328P  Used by
+ *     A3            PC03     Bluetooth (TX)
+ *     A4            PC04     Bluetooth (RX)
  *     A0            PC00     RTC
  *     A1            PC01     RTC
  *     A2            PC02     RTC
@@ -47,17 +51,19 @@
 // DEFINE
 long MINS  = 60;         // 60 Seconds in a Min.
 long HOURS = 60 * MINS;  // 60 Mins in an hour.
-long DAYS  = 12 * HOURS; // 24 Hours in a day. > Note: change the 24 to a 12 for non millitary time.
+long DAYS  = 24 * HOURS; // 24 Hours in a day. > Note: change the 24 to a 12 for non millitary time.
 
 long runTime = 0;        // Time from when we started.
 
 // default time sets. clock will start at the indicated values below clockHourSet:clockMinSet:00
 // NOTE: Seconds start at 0
-long clockHourSet;// = 11;
-long clockMinSet;//  = 45;
+long clockHourSet;
+long clockMinSet;
 
 int HourButtonPressed = false;
 int MinButtonPressed = false;
+
+String data = ""; // initialize received message
 
 /**
  * SN74141: True Table
@@ -99,10 +105,8 @@ DS1302RTC RTC(A2, A1, A0);
  * Purpose: IO initialization and debugging flag set
  */
 void setup() {
-    if (DEBUG_ON) {
-        Serial.begin(9600);
-    }
-    
+    Serial.begin(9600);
+
     pinMode(ledPin_0_a, OUTPUT);      
     pinMode(ledPin_0_b, OUTPUT);      
     pinMode(ledPin_0_c, OUTPUT);      
@@ -117,44 +121,54 @@ void setup() {
     pinMode(ledPin_a_2, OUTPUT);      
     pinMode(ledPin_a_3, OUTPUT);     
  
-    // NOTE:
-    // Grounding on pints 14 and 15 will set the Hour and Mins.
-    pinMode(14, INPUT);   // set the virtual pin 14 (pin 0 on the analog inputs ) 
+    // NOTE: Grounding on pints 14 and 15 will set the Hour and Mins.
+    pinMode(14, INPUT); // set the virtual pin 14 (pin 0 on the analog inputs ) 
     digitalWrite(14, HIGH); // set pin 14 as a pull up resistor.
 
-    pinMode(15, INPUT);   // set the vertual pin 15 (pin 1 on the analog inputs ) 
+    pinMode(15, INPUT); // set the vertual pin 15 (pin 1 on the analog inputs ) 
     digitalWrite(15, HIGH); // set pin 15 as a pull up resistor.
   
-    // Activate RTC module
-    Serial.print("RTC activated\n");
-    delay(500);
+    if (DEBUG_ON) {
+        // Activate RTC module
+        Serial.println("RTC activated");
+        delay(500);
 
-    // Check clock oscillation  
-    if (RTC.haltRTC()) {
-        Serial.print("Clock stopped!\n");
-    } else {
-        Serial.print("Clock working.\n");
+        // Check clock oscillation
+        if (RTC.haltRTC()) {
+            Serial.println("Clock stopped!");
+        } else {
+            Serial.println("Clock working.");
+        }
+
+        // Check write-protection
+        if (RTC.writeEN()) {
+            Serial.println("Write allowed.");
+        } else {
+            Serial.println("Write protected.");  
+        }
+      
+        delay(2000);
     }
 
-    // Check write-protection
-    if (RTC.writeEN())
-        Serial.print("Write allowed.\n");
-    else
-        Serial.print("Write protected.\n");
-
-    delay(2000);
-
-    // Setup Time library  
-    Serial.print("RTC Sync\n");
+    // Setup Time library
+    if (DEBUG_ON) {
+        Serial.print("RTC Sync\n");
+    }
+    
     setSyncProvider(RTC.get); // the function to get the time from the RTC
     if(timeStatus() == timeSet) {
-        Serial.print("Ok!\n");
+        if (DEBUG_ON) {
+            Serial.print("Ok!\n");
+        }
+        
         if(SET_TIME) { // once the time is sent, change boolean flag so it remains saved
-            setTime(0,59,12,22,04,2018); // change time accordingly
+            setTime(0,23,0,29,6,2018); // change time accordingly
             RTC.set(now());
         }
     } else {
-        Serial.print("FAIL!\n");
+        if (DEBUG_ON) {
+            Serial.print("FAIL!\n");
+        }
     }
     delay(2000);
 
@@ -163,6 +177,7 @@ void setup() {
     RTC.read(tm);
     clockMinSet = tm.Minute; 
     clockHourSet = tm.Hour;
+
 }
 
 /**
@@ -170,7 +185,7 @@ void setup() {
  * Purpose: Looks up the truth table and opens the correct outs from the arduino
  * to light the numbers given to this funciton (num1,num2), on a 6 nixie bulb setup. 
  * @var anod anode number
- * @var num1 bulb 1 value
+ * @var num1 bulb 1 valueclockMinSet
  * @var num2 bulb 2 value
  **/
 void DisplayNumberSet (int anod, int num1, int num2) {
@@ -264,6 +279,24 @@ void DisplayNumberString (int* array) {
  * Purpose: Main function that will continue to be executed as long as the system is energised
  */
 void loop() {
+    char lastChar = '0'; // individual char message
+   
+    // Append data as it keeps arriving
+    if(Serial.available()) {
+       lastChar = Serial.read();
+       data.concat(lastChar);
+    }
+
+    // check the frame is completed    
+    if (data.length() == 5 && data.indexOf(",") != -1) {
+        clockHourSet = atoi(data.substring(0, 2).c_str());
+        clockMinSet = atoi(data.substring(3).c_str());
+        data = "";
+        setTime(clockHourSet,clockMinSet,0,01,7,2018); // change time accordingly
+        RTC.set(now());
+        
+    }
+    
     // Get milliseconds.
     runTime = millis();
 
@@ -274,7 +307,7 @@ void loop() {
     int minInput  = digitalRead(15);
       
     if (DEBUG_ON) {
-        //Serial.println(hourInput);
+        Serial.println(hourInput);
         tmElements_t tm;
         RTC.read(tm);
         Serial.print(tm.Minute, DEC);
