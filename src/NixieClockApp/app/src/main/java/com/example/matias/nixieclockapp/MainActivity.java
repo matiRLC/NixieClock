@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 /*******************************************************
- * CREATED ON    : 2018-06-07
+ * CREATED ON    : 2018-12-29
  * BY            : Matias (matias.quintana.r@gmail.com)
  * DESCRIPTION   : Main activity that displays basic
  *                 information and main button

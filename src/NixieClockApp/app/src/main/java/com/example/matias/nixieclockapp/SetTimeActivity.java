@@ -22,7 +22,7 @@ import java.util.Set;
 import java.util.UUID;
 
 /*******************************************************
- * CREATED ON    : 2018-06-07
+ * CREATED ON    : 2018-12-29
  * BY            : Matias (matias.quintana.r@gmail.com)
  * DESCRIPTION   : Activity where specific hour and
  *                 minutes are selected and set to
