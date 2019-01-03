@@ -41,6 +41,7 @@ public class SetTimeActivity extends AppCompatActivity {
     private boolean connectSuccess = true;
     private OutputStream outputStream;
 
+
     /**
      * OnCreate method.
      * @param savedInstanceState
