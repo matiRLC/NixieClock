@@ -37,7 +37,7 @@ public class SetTimeActivity extends AppCompatActivity {
     private BluetoothSocket btSocket = null;
     private Set<BluetoothDevice> pairedDevices;
     private BluetoothDevice hc05 = null;
-    private final UUID portUUID = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb"); //Serial Port Service ID
+    private final UUID portUUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB"); //Serial Port Service ID
     private boolean connectSuccess = true;
     private OutputStream outputStream;
 
@@ -81,6 +81,7 @@ public class SetTimeActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
             connectSuccess = false;
+
         }
 
         if(connectSuccess) {
