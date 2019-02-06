@@ -30,6 +30,8 @@
  *    PIN12          PB04     Nixie Driver
  */
 
+#include <stdio.h>
+#include <stdlib.h>
 
 // DEFINE
 #define _DEBUG 0
@@ -46,6 +48,8 @@ long clockSecSet  = 00;
 
 int HourButtonPressed = false;
 int MinButtonPressed = false;
+
+String data = ""; // initialize received message
 
 /**
  * SN74141: True Table
