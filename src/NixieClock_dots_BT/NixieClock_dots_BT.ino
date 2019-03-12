@@ -42,9 +42,9 @@ long DAYS  = 24 * HOURS; // 24 Hours in a day. > Note: change the 24 to a 12 for
 long runTime = 0; // Time from when we started.
 
 // default time sets. clock will start at 12:34:56.  This is so we can count the correct order of tubes.
-long clockHourSet = 14;
-long clockMinSet  = 25;
-long clockSecSet  = 00;
+long clockHourSet;
+long clockMinSet;
+//long clockSecSet  = 00;
 
 int HourButtonPressed = false;
 int MinButtonPressed = false;
@@ -89,6 +89,8 @@ int ledPin_a_4 = 13;
  * Purpose: IO initialization and debugging flag set
  */
 void setup() {
+    Serial.begin(9600); // so BT can retrieve data
+    
     pinMode(ledPin_0_a, OUTPUT);      
     pinMode(ledPin_0_b, OUTPUT);      
     pinMode(ledPin_0_c, OUTPUT);      
@@ -111,9 +113,6 @@ void setup() {
     pinMode(15, INPUT); // set the virtual pin 15 (pin 1 on the analog inputs )  SET MINUTES up
     digitalWrite(15, HIGH); // set pin 15 as a pull up resistor.
  
-    if( _DEBUG ) {
-        Serial.begin(9600); 
-    }
 }
 
 /**
@@ -233,6 +232,10 @@ void loop() {
         clockHourSet = atoi(data.substring(0, 2).c_str());
         clockMinSet = atoi(data.substring(3).c_str());
         data = "";
+        lastChar = '0';
+        Serial.read();
+//        Serial.end(); // TESTING
+//        Serial.begin(9600);
     }
 
     // Get milliseconds.

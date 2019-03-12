@@ -1,0 +1,7 @@
+#Sun Mar 10 22:22:46 SGT 2019
+base.0=/Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/build/intermediates/dex/debug/mergeExtDexDebug/out
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/build/intermediates/dex/debug/mergeProjectDexDebug/out

@@ -1,0 +1,125 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:20:1-52:12
+INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:20:1-52:12
+INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:20:1-52:12
+MERGED from [com.android.support:support-v13:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/6fe2b6ebe314c39bfdef68a1ad2811ec/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/2d2933ce23ea8ebaadedc46816ca3e34/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/a1015ea4d37eedab56f4604cfa6e83da/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/c8af982c48b9a7c7112db2528c2914f8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/c92007a3ed22889a3f8cfef31d718ff7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/5b6f4f06975e904004a2235ae5b98e20/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/ebe6654f3859e720c52b470c930d53b0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/ee5c5772e6705e3544d855e2ba585fe3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/bafdef7ee5c9a183c70f812761204c36/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/0ed6c910661c930b99b7bb1ab8ba480c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/bd1e5a43909dfa61f8f75c69772d1ce3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/matias/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/5d81478e224357d7f9348dfa7dfff3ee/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:20:1-52:12
+INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:20:1-52:12
+	package
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:21:5-50
+	android:versionName
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:23:5-30
+		INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:20:11-69
+	android:versionCode
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:22:5-28
+		INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml
+uses-feature#android.hardware.bluetooth_le
+ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:31:5-89
+	android:required
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:31:64-87
+	android:name
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:31:19-63
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:33:5-80
+	android:name
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:33:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:34:5-78
+	android:name
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:34:22-76
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:35:5-67
+	android:name
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:35:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:36:5-73
+	android:name
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:36:22-71
+application
+ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:38:5-50:19
+	android:label
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:38:18-50
+	android:icon
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:39:9-45
+	android:theme
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:40:9-56
+activity#com.example.android.bluetoothlegatt.DeviceScanActivity
+ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:41:9-47:20
+	android:label
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:42:13-45
+	android:name
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:41:19-53
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:43:13-46:29
+action#android.intent.action.MAIN
+ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:44:17-68
+	android:name
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:44:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:45:17-76
+	android:name
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:45:27-74
+activity#com.example.android.bluetoothlegatt.DeviceControlActivity
+ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:48:9-58
+	android:name
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:48:19-56
+service#com.example.android.bluetoothlegatt.BluetoothLeService
+ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:49:9-77
+	android:enabled
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:49:53-75
+	android:name
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml:49:18-52
+uses-sdk
+INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml
+MERGED from [com.android.support:support-v13:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/6fe2b6ebe314c39bfdef68a1ad2811ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/6fe2b6ebe314c39bfdef68a1ad2811ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/2d2933ce23ea8ebaadedc46816ca3e34/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/2d2933ce23ea8ebaadedc46816ca3e34/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/a1015ea4d37eedab56f4604cfa6e83da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/a1015ea4d37eedab56f4604cfa6e83da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/c8af982c48b9a7c7112db2528c2914f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/c8af982c48b9a7c7112db2528c2914f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/c92007a3ed22889a3f8cfef31d718ff7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/c92007a3ed22889a3f8cfef31d718ff7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/5b6f4f06975e904004a2235ae5b98e20/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/5b6f4f06975e904004a2235ae5b98e20/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/ebe6654f3859e720c52b470c930d53b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/ebe6654f3859e720c52b470c930d53b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/ee5c5772e6705e3544d855e2ba585fe3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/ee5c5772e6705e3544d855e2ba585fe3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/bafdef7ee5c9a183c70f812761204c36/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/bafdef7ee5c9a183c70f812761204c36/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/0ed6c910661c930b99b7bb1ab8ba480c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/0ed6c910661c930b99b7bb1ab8ba480c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/bd1e5a43909dfa61f8f75c69772d1ce3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /Users/matias/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/bd1e5a43909dfa61f8f75c69772d1ce3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/matias/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/5d81478e224357d7f9348dfa7dfff3ee/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/matias/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/5d81478e224357d7f9348dfa7dfff3ee/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/matias/Dropbox/Creations/Nixie Clock/src/BluetoothLeGatt_Test/Application/src/main/AndroidManifest.xml

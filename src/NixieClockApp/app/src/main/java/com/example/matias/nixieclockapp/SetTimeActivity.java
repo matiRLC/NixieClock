@@ -1,12 +1,15 @@
 package com.example.matias.nixieclockapp;
 
 import android.app.Activity;
+
 import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+
+
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -21,19 +24,20 @@ import java.io.OutputStream;
 import java.util.Set;
 import java.util.UUID;
 
-/*******************************************************
+/*******************************************************************************
  * CREATED ON    : 2018-12-29
  * BY            : Matias (matias.quintana.r@gmail.com)
- * DESCRIPTION   : Activity where specific hour and
- *                 minutes are selected and set to
- *                 Nixie Clock
- *******************************************************/
+ * DESCRIPTION   : Activity where specific hour and minutes are selected and
+ *                 set to Nixie Clock, primarily with an HC-05/HC-06
+ *******************************************************************************/
 
 public class SetTimeActivity extends AppCompatActivity {
+
     private Button sendButton;
     private EditText mHour;
     private EditText mMinutes;
-    private BluetoothAdapter mBluetoothAdapter = null;
+
+    private BluetoothAdapter mBluetoothAdapter = null;  // HC-06 BT adapter
     private BluetoothSocket btSocket = null;
     private Set<BluetoothDevice> pairedDevices;
     private BluetoothDevice hc05 = null;

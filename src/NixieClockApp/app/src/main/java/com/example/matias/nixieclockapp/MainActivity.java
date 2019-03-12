@@ -9,12 +9,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-/*******************************************************
+/*******************************************************************************
  * CREATED ON    : 2018-12-29
  * BY            : Matias (matias.quintana.r@gmail.com)
- * DESCRIPTION   : Main activity that displays basic
- *                 information and main button
- *******************************************************/
+ * DESCRIPTION   : Main activity that displays basic information and main button
+ ******************************************************************************/
 public class MainActivity extends AppCompatActivity {
     private Button setButton;
 
@@ -52,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
      * Launches next activty where user sets time
      */
     private void doSetTime() {
-        startActivity(new Intent(MainActivity.this, SetTimeActivity.class));
+        startActivity(new Intent(MainActivity.this, DeviceScanActivity.class)); // TODO: ORIGINALLY THIS WAS SetTimeActivity
         finish();
     }
 

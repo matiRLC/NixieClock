@@ -18,23 +18,23 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
         android:ems="5"
-        android:inputType="number"
         android:imeOptions="actionDone"
+        android:inputType="number"
         android:singleLine="true"
-        android:text="Set Hour" />
+        android:text="@string/setHour" />
 
     <EditText
         android:id="@+id/setMin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/setHour"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="90dp"
         android:ems="5"
-        android:inputType="number"
         android:imeOptions="actionDone"
+        android:inputType="number"
         android:singleLine="true"
-        android:text="Set Minutes" />
+        android:text="@string/setMin" />
 
     <Button
         android:id="@+id/sendTimeButton"
@@ -42,8 +42,8 @@
         android:layout_height="120dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="70dp"
-        android:text="SEND TIME"
+        android:layout_marginBottom="100dp"
+        android:text="@string/sendTime"
         android:textSize="30sp"
         android:textStyle="bold" />
 

@@ -52,8 +52,8 @@
         android:layout_height="120dp"
         android:layout_below="@+id/version"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:text="SET TIME"
+        android:layout_marginTop="100dp"
+        android:text="@string/buttonSet"
         android:textSize="30sp"
         android:textStyle="bold" />
 
