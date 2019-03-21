@@ -12,7 +12,38 @@
 		604583FC220A7F65005389B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604583FA220A7F65005389B0 /* Main.storyboard */; };
 		604583FE220A7F66005389B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604583FD220A7F66005389B0 /* Assets.xcassets */; };
 		60458401220A7F66005389B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604583FF220A7F66005389B0 /* LaunchScreen.storyboard */; };
+		6058436C223FF9B400D9FA38 /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60584348223FF9B300D9FA38 /* PreferencesTableViewController.swift */; };
+		60584370223FF9B400D9FA38 /* SerialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60584350223FF9B400D9FA38 /* SerialViewController.swift */; };
+		60584371223FF9B400D9FA38 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 60584351223FF9B400D9FA38 /* MBProgressHUD.m */; };
+		60584372223FF9B400D9FA38 /* PreferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60584352223FF9B400D9FA38 /* PreferencesTableViewController.swift */; };
+		60584373223FF9B400D9FA38 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60584353223FF9B400D9FA38 /* LaunchScreen.xib */; };
+		60584374223FF9B400D9FA38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60584355223FF9B400D9FA38 /* Main.storyboard */; };
+		60584375223FF9B400D9FA38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60584358223FF9B400D9FA38 /* Images.xcassets */; };
+		60584376223FF9B400D9FA38 /* BluetoothSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60584359223FF9B400D9FA38 /* BluetoothSerial.swift */; };
+		60584377223FF9B400D9FA38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6058435A223FF9B400D9FA38 /* AppDelegate.swift */; };
+		60584378223FF9B400D9FA38 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6058435C223FF9B400D9FA38 /* Info.plist */; };
+		60584379223FF9B400D9FA38 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6058435D223FF9B400D9FA38 /* ScannerViewController.swift */; };
+		6058437A223FF9B400D9FA38 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6058435E223FF9B400D9FA38 /* README.md */; };
+		6058437B223FF9B400D9FA38 /* HM10_SerialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60584363223FF9B400D9FA38 /* HM10_SerialTests.swift */; };
+		6058437C223FF9B400D9FA38 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60584364223FF9B400D9FA38 /* Info.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60584367223FF9B400D9FA38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6058435F223FF9B400D9FA38 /* NixieClock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA5AB9651B77A30E007443C8;
+			remoteInfo = Serial;
+		};
+		60584369223FF9B400D9FA38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6058435F223FF9B400D9FA38 /* NixieClock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA5AB97A1B77A30F007443C8;
+			remoteInfo = NixieClockTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		604583F3220A7F65005389B0 /* NixieClockApp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NixieClockApp_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +53,24 @@
 		604583FD220A7F66005389B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60458400220A7F66005389B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60458402220A7F66005389B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60584348223FF9B300D9FA38 /* PreferencesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesTableViewController.swift; sourceTree = "<group>"; };
+		60584350223FF9B400D9FA38 /* SerialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialViewController.swift; sourceTree = "<group>"; };
+		60584351223FF9B400D9FA38 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		60584352223FF9B400D9FA38 /* PreferencesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesTableViewController.swift; sourceTree = "<group>"; };
+		60584354223FF9B400D9FA38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		60584356223FF9B400D9FA38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60584357223FF9B400D9FA38 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		60584358223FF9B400D9FA38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		60584359223FF9B400D9FA38 /* BluetoothSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothSerial.swift; sourceTree = "<group>"; };
+		6058435A223FF9B400D9FA38 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6058435B223FF9B400D9FA38 /* Serial-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Serial-Bridging-Header.h"; sourceTree = "<group>"; };
+		6058435C223FF9B400D9FA38 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6058435D223FF9B400D9FA38 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		6058435E223FF9B400D9FA38 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6058435F223FF9B400D9FA38 /* NixieClock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NixieClock.xcodeproj; sourceTree = "<group>"; };
+		60584363223FF9B400D9FA38 /* HM10_SerialTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HM10_SerialTests.swift; sourceTree = "<group>"; };
+		60584364223FF9B400D9FA38 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607FA2AA223FE342002E3F65 /* NixieClockApp_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NixieClockApp_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +108,60 @@
 				604583FA220A7F65005389B0 /* Main.storyboard */,
 				604583FD220A7F66005389B0 /* Assets.xcassets */,
 				604583FF220A7F66005389B0 /* LaunchScreen.storyboard */,
+				6058434E223FF9B400D9FA38 /* HM10-BluetoothSerial-iOS-master */,
+				60584348223FF9B300D9FA38 /* PreferencesTableViewController.swift */,
 				60458402220A7F66005389B0 /* Info.plist */,
+				607FA2AA223FE342002E3F65 /* NixieClockApp_iOS-Bridging-Header.h */,
 			);
 			path = NixieClockApp_iOS;
+			sourceTree = "<group>";
+		};
+		6058434E223FF9B400D9FA38 /* HM10-BluetoothSerial-iOS-master */ = {
+			isa = PBXGroup;
+			children = (
+				6058434F223FF9B400D9FA38 /* NixieClock */,
+				6058435E223FF9B400D9FA38 /* README.md */,
+				6058435F223FF9B400D9FA38 /* NixieClock.xcodeproj */,
+				60584362223FF9B400D9FA38 /* HM10 SerialTests */,
+			);
+			path = "HM10-BluetoothSerial-iOS-master";
+			sourceTree = "<group>";
+		};
+		6058434F223FF9B400D9FA38 /* NixieClock */ = {
+			isa = PBXGroup;
+			children = (
+				60584350223FF9B400D9FA38 /* SerialViewController.swift */,
+				60584351223FF9B400D9FA38 /* MBProgressHUD.m */,
+				60584352223FF9B400D9FA38 /* PreferencesTableViewController.swift */,
+				60584353223FF9B400D9FA38 /* LaunchScreen.xib */,
+				60584355223FF9B400D9FA38 /* Main.storyboard */,
+				60584357223FF9B400D9FA38 /* MBProgressHUD.h */,
+				60584358223FF9B400D9FA38 /* Images.xcassets */,
+				60584359223FF9B400D9FA38 /* BluetoothSerial.swift */,
+				6058435A223FF9B400D9FA38 /* AppDelegate.swift */,
+				6058435B223FF9B400D9FA38 /* Serial-Bridging-Header.h */,
+				6058435C223FF9B400D9FA38 /* Info.plist */,
+				6058435D223FF9B400D9FA38 /* ScannerViewController.swift */,
+			);
+			path = NixieClock;
+			sourceTree = "<group>";
+		};
+		60584360223FF9B400D9FA38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60584368223FF9B400D9FA38 /* Serial.app */,
+				6058436A223FF9B400D9FA38 /* NixieClockTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60584362223FF9B400D9FA38 /* HM10 SerialTests */ = {
+			isa = PBXGroup;
+			children = (
+				60584363223FF9B400D9FA38 /* HM10_SerialTests.swift */,
+				60584364223FF9B400D9FA38 /* Info.plist */,
+			);
+			path = "HM10 SerialTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +196,7 @@
 				TargetAttributes = {
 					604583F2220A7F65005389B0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -110,6 +211,12 @@
 			mainGroup = 604583EA220A7F65005389B0;
 			productRefGroup = 604583F4220A7F65005389B0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 60584360223FF9B400D9FA38 /* Products */;
+					ProjectRef = 6058435F223FF9B400D9FA38 /* NixieClock.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				604583F2220A7F65005389B0 /* NixieClockApp_iOS */,
@@ -117,14 +224,37 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		60584368223FF9B400D9FA38 /* Serial.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Serial.app;
+			remoteRef = 60584367223FF9B400D9FA38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6058436A223FF9B400D9FA38 /* NixieClockTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NixieClockTests.xctest;
+			remoteRef = 60584369223FF9B400D9FA38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		604583F1220A7F65005389B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60584373223FF9B400D9FA38 /* LaunchScreen.xib in Resources */,
+				60584374223FF9B400D9FA38 /* Main.storyboard in Resources */,
+				6058437C223FF9B400D9FA38 /* Info.plist in Resources */,
 				60458401220A7F66005389B0 /* LaunchScreen.storyboard in Resources */,
+				60584375223FF9B400D9FA38 /* Images.xcassets in Resources */,
 				604583FE220A7F66005389B0 /* Assets.xcassets in Resources */,
 				604583FC220A7F65005389B0 /* Main.storyboard in Resources */,
+				6058437A223FF9B400D9FA38 /* README.md in Resources */,
+				60584378223FF9B400D9FA38 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +265,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60584377223FF9B400D9FA38 /* AppDelegate.swift in Sources */,
 				604583F9220A7F65005389B0 /* ViewController.swift in Sources */,
+				6058436C223FF9B400D9FA38 /* PreferencesTableViewController.swift in Sources */,
+				60584376223FF9B400D9FA38 /* BluetoothSerial.swift in Sources */,
+				60584372223FF9B400D9FA38 /* PreferencesTableViewController.swift in Sources */,
+				60584379223FF9B400D9FA38 /* ScannerViewController.swift in Sources */,
+				60584370223FF9B400D9FA38 /* SerialViewController.swift in Sources */,
+				6058437B223FF9B400D9FA38 /* HM10_SerialTests.swift in Sources */,
 				604583F7220A7F65005389B0 /* AppDelegate.swift in Sources */,
+				60584371223FF9B400D9FA38 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +295,22 @@
 				60458400220A7F66005389B0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		60584353223FF9B400D9FA38 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60584354223FF9B400D9FA38 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		60584355223FF9B400D9FA38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60584356223FF9B400D9FA38 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -282,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 689A6ZJB3V;
 				INFOPLIST_FILE = NixieClockApp_iOS/Info.plist;
@@ -291,6 +446,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "matirlc.NixieClockApp-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NixieClockApp_iOS/NixieClockApp_iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 689A6ZJB3V;
 				INFOPLIST_FILE = NixieClockApp_iOS/Info.plist;
@@ -309,6 +467,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "matirlc.NixieClockApp-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NixieClockApp_iOS/NixieClockApp_iOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

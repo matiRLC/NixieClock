@@ -48,14 +48,14 @@
                                 <state key="normal" title="SET TIME">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
-                                <connections>
-                                    <segue destination="6fM-lZ-fnq" kind="show" id="9aB-JQ-BZi"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="9GT-Rt-sOU" kind="show" id="wiO-k7-v9s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,7 +107,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VK1-fG-OS4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="3x9-hu-Yhl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="736.79999999999995" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1590" y="134"/>
+        </scene>
+        <!--Scanning ...-->
+        <scene sceneID="lc2-Nq-HTn">
+            <objects>
+                <viewController id="9GT-Rt-sOU" customClass="ScannerViewController" customModule="NixieClockApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wPO-cP-Fxx"/>
+                        <viewControllerLayoutGuide type="bottom" id="OHr-eh-NBR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Lx-3h-QyE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mdK-aV-HG4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="qbf-gr-g5F">
+                                        <rect key="frame" x="0.0" y="22" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qbf-gr-g5F" id="NOS-V2-baX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth Speaker" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIC-cH-4fe">
+                                                    <rect key="frame" x="22" y="3" width="206" height="38"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKI-gu-1cZ">
+                                                    <rect key="frame" x="236" y="3" width="124" height="38"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="124" id="skT-TY-ObB"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GKI-gu-1cZ" firstAttribute="trailing" secondItem="NOS-V2-baX" secondAttribute="trailingMargin" id="3Oe-7Y-MFP"/>
+                                                <constraint firstItem="qIC-cH-4fe" firstAttribute="leading" secondItem="NOS-V2-baX" secondAttribute="leadingMargin" constant="7" id="KvA-4U-EMi"/>
+                                                <constraint firstItem="qIC-cH-4fe" firstAttribute="height" secondItem="GKI-gu-1cZ" secondAttribute="height" id="YnY-j0-8cG"/>
+                                                <constraint firstItem="qIC-cH-4fe" firstAttribute="top" secondItem="NOS-V2-baX" secondAttribute="topMargin" constant="-8" id="aZQ-Pk-YOD"/>
+                                                <constraint firstItem="GKI-gu-1cZ" firstAttribute="leading" secondItem="qIC-cH-4fe" secondAttribute="trailing" constant="8" id="d8o-0c-bfn"/>
+                                                <constraint firstItem="qIC-cH-4fe" firstAttribute="centerY" secondItem="GKI-gu-1cZ" secondAttribute="centerY" id="hvF-ZA-fmQ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="qIC-cH-4fe" secondAttribute="bottom" constant="-8" id="ovq-vt-JOM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9GT-Rt-sOU" id="PIH-RI-fc6"/>
+                                    <outlet property="delegate" destination="9GT-Rt-sOU" id="59g-7A-IDy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mdK-aV-HG4" firstAttribute="height" secondItem="1Lx-3h-QyE" secondAttribute="height" id="JJ5-oe-4mZ"/>
+                            <constraint firstAttribute="centerY" secondItem="mdK-aV-HG4" secondAttribute="centerY" id="Lzi-ku-rhJ"/>
+                            <constraint firstItem="mdK-aV-HG4" firstAttribute="centerX" secondItem="1Lx-3h-QyE" secondAttribute="centerX" id="Orj-Oe-DGG"/>
+                            <constraint firstItem="mdK-aV-HG4" firstAttribute="width" secondItem="1Lx-3h-QyE" secondAttribute="width" id="iyE-bh-969"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ROv-zT-XLT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scanning ..." id="9NN-Aw-WKf">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="iNH-hn-vUO">
+                            <connections>
+                                <action selector="cancel:" destination="9GT-Rt-sOU" id="jaI-HW-shh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Try again" id="mzg-ir-lSM">
+                            <connections>
+                                <action selector="tryAgain:" destination="9GT-Rt-sOU" id="9am-84-ynR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="mdK-aV-HG4" id="LyI-Hg-ebf"/>
+                        <outlet property="tryAgainButton" destination="mzg-ir-lSM" id="NGb-aS-MTZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rQD-vN-7cu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="134"/>
         </scene>
     </scenes>
 </document>
