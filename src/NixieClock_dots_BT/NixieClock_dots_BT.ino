@@ -112,8 +112,9 @@ void setup() {
 
     pinMode(15, INPUT); // set the virtual pin 15 (pin 1 on the analog inputs )  SET MINUTES up
     digitalWrite(15, HIGH); // set pin 15 as a pull up resistor.
- 
-}
+
+//    digitalWrite(ledPin_a_1, HIGH); // TEST
+}   
 
 /**
  * DisplayNumberSet
@@ -123,7 +124,7 @@ void setup() {
  * @var num1 bulb 1 valueclockMinSet
  * @var num2 bulb 2 value
  **/
-void DisplayNumberSet(int anod, int num2, int num1) {
+void DisplayNumberSet(int anod, int num2, int num1, int delayVal) {
     int anodPin;
     int a,b,c,d;  
     
@@ -178,10 +179,11 @@ void DisplayNumberSet(int anod, int num2, int num1) {
     digitalWrite(ledPin_1_c, c);
     digitalWrite(ledPin_1_b, b);
     digitalWrite(ledPin_1_a, a);
+
     
     // Turn on this anod.
     digitalWrite(anodPin, HIGH);   
-
+    
     // Delay
     // NOTE: With the differnce in Nixie bulbs you may have to change
     //       this delay to set the update speed of the bulbs. If you 
@@ -189,10 +191,11 @@ void DisplayNumberSet(int anod, int num2, int num1) {
     //       you want to set this delay just right so that you have 
     //       nice bright output yet quick enough so that you can multiplex with
     //       more bulbs.
-    delay(2);
-  
+    delay(delayVal);
+      
     // Shut off this anod.
     digitalWrite(anodPin, LOW);
+
 }
 
 /**
@@ -204,13 +207,13 @@ void DisplayNumberSet(int anod, int num2, int num1) {
 void DisplayNumberString (int* array) {
     
     // colons
-    DisplayNumberSet(0, array[0], array[4]);
+    DisplayNumberSet(0, array[0], array[4], 7);   
     // bank 1 (bulb 4, 8)
-    DisplayNumberSet(1, array[3], array[7]);
+    DisplayNumberSet(1, array[3], array[7], 3.5f);
     // bank 2 (bulb 2, 7)
-    DisplayNumberSet(2, array[2], array[6]);
+    DisplayNumberSet(2, array[2], array[6], 3.5f);
     // bank 3 (bulb 1, 5)
-    DisplayNumberSet(3, array[1], array[5]);
+    DisplayNumberSet(3, array[1], array[5], 3.5f);
 }
 
 /**
@@ -218,6 +221,7 @@ void DisplayNumberString (int* array) {
  * Purpose: Main function that will continue to be executed as long as the system is energised
  */
 void loop() {
+    digitalWrite(ledPin_a_1, HIGH); // TEST
     // BT message
     char lastChar = '0'; // individual char message
    
@@ -234,8 +238,6 @@ void loop() {
         data = "";
         lastChar = '0';
         Serial.read();
-//        Serial.end(); // TESTING
-//        Serial.begin(9600);
     }
 
     // Get milliseconds.
@@ -287,11 +289,11 @@ void loop() {
  
     // Fill in the Number array used to display on the tubes.
     int NumberArray[8] = {0, 0, 0, 0, 0, 0, 0, 0};
-    NumberArray[0] = 0; // colons
+    NumberArray[0] = 1; // colons
     NumberArray[1] = upperHours;
     NumberArray[2] = lowerHours;
     NumberArray[3] = upperMins;
-    NumberArray[4] = 0; // colons
+    NumberArray[4] = 1; // colons
     NumberArray[5] = lowerMins;
     NumberArray[6] = upperSeconds;
     NumberArray[7] = lowerSeconds;
@@ -299,6 +301,3 @@ void loop() {
     // Display.
     DisplayNumberString(NumberArray);
 }
-
-
-
