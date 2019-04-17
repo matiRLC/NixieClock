@@ -206,8 +206,12 @@ void DisplayNumberSet(int anod, int num2, int num1, int delayVal) {
  */
 void DisplayNumberString (int* array) {
     
-    // colons
-    DisplayNumberSet(0, array[0], array[4], 7);   
+    // colons,
+    DisplayNumberSet(0, 0, 0, 1);
+    DisplayNumberSet(0, 1, 1, 1);
+    DisplayNumberSet(0, 2, 2, 1);
+    DisplayNumberSet(0, 3, 3, 1);
+    
     // bank 1 (bulb 4, 8)
     DisplayNumberSet(1, array[3], array[7], 3.5f);
     // bank 2 (bulb 2, 7)
@@ -289,11 +293,11 @@ void loop() {
  
     // Fill in the Number array used to display on the tubes.
     int NumberArray[8] = {0, 0, 0, 0, 0, 0, 0, 0};
-    NumberArray[0] = 1; // colons
+    NumberArray[0] = 0; // colons
     NumberArray[1] = upperHours;
     NumberArray[2] = lowerHours;
     NumberArray[3] = upperMins;
-    NumberArray[4] = 1; // colons
+    NumberArray[4] = 0; // colons, values of 0,1,2,3 make each dot brighter
     NumberArray[5] = lowerMins;
     NumberArray[6] = upperSeconds;
     NumberArray[7] = lowerSeconds;
